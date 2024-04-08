@@ -1,0 +1,299 @@
+.principal {
+    background-image: url(../assets/image/Fondo.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.conteiner_login {
+    position: absolute;
+    width: 36%;
+    height: 90%;
+    left: 33%;
+    top: 5%;
+    border-radius: 50px;
+    background: rgba(51, 106, 203, 0.73125);
+    border: 3px solid rgba(1, 1, 1, 1);
+}
+
+.logo {
+    position: absolute;
+    width: 40%;
+    height: 30%;
+    left: 29%;
+    top: 4%;
+    border-radius: 50px;
+}
+
+.titulo {
+    position: absolute;
+    width: 80%;
+    height: 10%;
+    left: 10%;
+    top: 28%;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    font: oblique bold 120% cursive;
+}
+
+.formulario {
+    position: absolute;
+    width: 80%;
+    height: 10%;
+    left: 10%;
+    top: 50%;
+}
+
+/* Estilo del textBox para el nombre de usuario */
+.form-text {
+    width: 100%;
+    max-width: 800px;
+    position: relative;
+    overflow: hidden;
+}
+
+.form-text input {
+    width: 100%;
+    height: 100%;
+    background: none;
+    color: #fff;
+    padding-top: 20px;
+    border: none;
+    outline: 0px;
+}
+
+.form-text .lbl-nombre {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    pointer-events: none;
+    border-bottom: 1px solid #c7c7c7;
+}
+
+.form-text .lbl-nombre:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #0e1b1b;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+
+.text-nomb {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: all 0.3s ease;
+    color: #fff;
+}
+
+.form-text input:focus+.lbl-nombre .text-nomb,
+.form-text input:valid+.lbl-nombre .text-nomb {
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #2ecece;
+}
+
+.form-text input:focus+.lbl-nombre:after,
+.form-text input:valid+.lbl-nombre:after {
+    transform: translateX(0%);
+}
+
+@media only screen and (min-width:320px) and (max-width:768px) {
+    .form-text {
+        width: 85%;
+    }
+}
+
+/* Estilo del textBox para la contraseña */
+.form-contrasena {
+    width: 100%;
+    max-width: 800px;
+    position: absolute;
+    /*cambia la posición a absoluta*/
+    top: 160%;
+    /*posición vertical en el 50% de la pantalla*/
+    left: 50%;
+    /*posición horizontal en el 50% de la pantalla*/
+    transform: translate(-50%, -50%);
+    /*centra el formulario*/
+    overflow: hidden;
+}
+
+.form-contrasena input {
+    width: 100%;
+    height: 100%;
+    background: none;
+    color: #fff;
+    padding-top: 20px;
+    border: none;
+    outline: 0px;
+}
+
+.form-contrasena .lbl-contrasena {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    pointer-events: none;
+    border-bottom: 1px solid #c7c7c7;
+}
+
+.form-contrasena .lbl-contrasena:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #0e1b1b;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+
+.text-contrasena {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: all 0.3s ease;
+    color: #fff;
+}
+
+.form-contrasena input:focus+.lbl-contrasena .text-contrasena,
+.form-contrasena input:valid+.lbl-contrasena .text-contrasena {
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #2ecece;
+}
+
+.form-contrasena input:focus+.lbl-contrasena:after,
+.form-contrasena input:valid+.lbl-contrasena:after {
+    transform: translateX(0%);
+}
+
+@media only screen and (min-width:320px) and (max-width:768px) {
+    .form-contrasena {
+        width: 85%;
+    }
+}
+
+
+ul.horizontal li a.active {
+    background-color: #04AA6D;
+}
+
+ul.horizontal li a.right {
+    background-color: white;
+    text-align: right;
+    color: black;
+
+}
+
+
+
+
+ul.horizontal li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/*formulario para el boton de ingresar*/
+.form-boton {
+    background-color: #867c7c;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 250%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    /* Establecer el ancho en 200% */
+    height: 60%;
+    /* Establecer el alto en 200% */
+}
+
+
+.form-boton:hover {
+    background: #2aad35;
+}
+
+@media only screen and (min-width:320px) and (max-width:768px) {
+    .form-boton {
+        width: 85%;
+    }
+}
+
+/*formulario para el boton de registrarse*/
+.form-boton2 {
+    position: absolute;
+    width: 120%;
+    height: 10%;
+    left: -10%;
+    top: 310%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton2 {
+    width: 100%;
+    height: 100%;
+    background: #2ecece;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.boton2:hover {
+    background: #22d13f;
+}
+
+@media only screen and (min-width:320px) and (max-width:768px) {
+    .form-boton2 {
+        width: 85%;
+    }
+}
+
+.form-boton2 hr {
+    width: 90%;
+    border: 2px solid #cccccc;
+    margin: 10px 0;
+}
+
+.boton-login {
+    position: absolute;
+    width: 120%;
+    height: 10%;
+    left: 25%;
+    top: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

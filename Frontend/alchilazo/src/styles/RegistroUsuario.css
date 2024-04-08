@@ -1,0 +1,594 @@
+.principal {
+    background-image: url(../assets/image/Fondo.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.conteiner-registro-usuario {
+    position: absolute;
+    width: 94%;
+    height: 90%;
+    left: 3%;
+    top: 5%;
+    border-radius: 50px;
+    background: rgba(51, 106, 203, 0.73125);
+    border: 3px solid rgba(1, 1, 1, 1);
+    box-shadow: 10px 10px 10px 10px rgba(1, 1, 1, 1);
+    filter: blur(0.1px);
+}
+
+.logo-registro-usuario {
+    position: absolute;
+    width: 15%;
+    height: 30%;
+    left: 42%;
+    top: 0%;
+    border-radius: 50px;
+}
+
+.titulo-registro-usuario {
+    position: absolute;
+    width: 80%;
+    height: 10%;
+    left: 12%;
+    top: 13%;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    font: oblique bold 120% cursive;
+}
+
+.formulario-registro-usuario {
+    position: absolute;
+    width: 80%;
+    height: 10%;
+    left: 5%;
+    top: 35%;
+}
+
+/* Estilo del textbox para el nombre de usuario */
+.form-text-registro-usuario {
+    width: 100%;
+    max-width: 40%;
+    position: fixed;
+    left: 5%;
+    top: 35%;
+    overflow: hidden;
+
+}
+
+.form-text-registro-usuario input {
+    width: 100%;
+    height: 100%;
+    background: none;
+    color: #fff;
+    padding-top: 40px;
+    border: none;
+    outline: 0px;
+}
+
+.form-text-registro-usuario .lbl-registro-usuario {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    pointer-events: none;
+    border-bottom: 1px solid #c7c7c7;
+}
+
+.form-text-registro-usuario .lbl-registro-usuario:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #0e1b1b;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+
+.text-usuario {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: all 0.3s ease;
+    color: #fff;
+}
+
+.form-text-registro-usuario input:focus+.lbl-registro-usuario .text-usuario,
+.form-text-registro-usuario input:valid+.lbl-registro-usuario .text-usuario {
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #2ecece;
+}
+
+.form-text-registro-usuario input:focus+.lbl-registro-usuario:after,
+.form-text-registro-usuario input:valid+.lbl-registro-usuario:after {
+    transform: translateX(0%);
+}
+
+@media only screen and (min-width:320px) and (max-width:768px) {
+    .form-text-registro-usuario {
+        width: 85%;
+    }
+}
+
+/* Estilo del textbox para el apellido */
+.form-text-apellido {
+    width: 100%;
+    max-width: 40%;
+    position: fixed;
+    left: 55%;
+    top: 35%;
+    overflow: hidden;
+
+}
+
+.form-text-apellido input {
+    width: 100%;
+    height: 100%;
+    background: none;
+    color: #fff;
+    padding-top: 40px;
+    border: none;
+    outline: 0px;
+}
+
+.form-text-apellido .lbl-apellido {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    pointer-events: none;
+    border-bottom: 1px solid #c7c7c7;
+}
+
+.form-text-apellido .lbl-apellido:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #0e1b1b;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+
+.text-apellido {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: all 0.3s ease;
+    color: #fff;
+}
+
+.form-text-apellido input:focus+.lbl-apellido .text-apellido,
+.form-text-apellido input:valid+.lbl-apellido .text-apellido {
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #2ecece;
+}
+
+.form-text-apellido input:focus+.lbl-apellido:after,
+.form-text-apellido input:valid+.lbl-apellido:after {
+    transform: translateX(0%);
+}
+
+@media only screen and (min-width:320px) and (max-width:768px) {
+    .form-text-apellido {
+        width: 85%;
+    }
+}
+
+
+/* Estilo del textbox para el correo*/
+.form-text-correo-usuario {
+    width: 100%;
+    max-width: 40%;
+    position: fixed;
+    left: 5%;
+    top: 47%;
+    overflow: hidden;
+}
+
+.form-text-correo-usuario input {
+    width: 100%;
+    height: 100%;
+    background: none;
+    color: #fff;
+    padding-top: 40px;
+    border: none;
+    outline: 0px;
+}
+
+.form-text-correo-usuario .lbl-correo-usuario {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    pointer-events: none;
+    border-bottom: 1px solid #c7c7c7;
+}
+
+.form-text-correo-usuario .lbl-correo-usuario:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #0e1b1b;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+
+.text-correo-usuario {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: all 0.3s ease;
+    color: #fff;
+}
+
+.form-text-correo-usuario input:focus+.lbl-correo-usuario .text-correo-usuario,
+.form-text-correo-usuario input:valid+.lbl-correo-usuario .text-correo-usuario {
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #2ecece;
+}
+
+.form-text-correo-usuario input:focus+.lbl-correo-usaurio:after,
+.form-text-correo-usuario input:valid+.lbl-correo-usuario:after {
+    transform: translateX(0%);
+}
+
+@media only screen and (min-width:320px) and (max-width:768px) {
+    .form-text-correo-usuario {
+        width: 85%;
+    }
+}
+
+/* Estilo del textbox para la contraseña */
+.form-text-contrasena-usuario {
+    width: 100%;
+    max-width: 18%;
+    position: fixed;
+    left: 55%;
+    top: 47%;
+    overflow: hidden;
+}
+
+.form-text-contrasena-usuario input {
+    width: 100%;
+    height: 100%;
+    background: none;
+    color: #fff;
+    padding-top: 40px;
+    border: none;
+    outline: 0px;
+}
+
+.form-text-contrasena-usuario .lbl-contrasena-usuario {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    pointer-events: none;
+    border-bottom: 1px solid #c7c7c7;
+}
+
+.form-text-contrasena-usuario .lbl-contrasena-usuario:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #0e1b1b;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+
+.text-contrasena-usuario {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: all 0.3s ease;
+    color: #fff;
+}
+
+.form-text-contrasena-usuario input:focus+.lbl-contrasena-usuario .text-contrasena-usuario,
+.form-text-contrasena-usuario input:valid+.lbl-contrasena-usuario .text-contrasena-usuario {
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #2ecece;
+}
+
+.form-text-contrasena-usuario input:focus+.lbl-contrasena-usuario:after,
+.form-text-contrasena-usuario input:valid+.lbl-contrasena-usuario:after {
+    transform: translateX(0%);
+}
+
+@media only screen and (min-width:320px) and (max-width:768px) {
+    .form-text-contrasena-usuario {
+        width: 85%;
+    }
+}
+
+/* Estilo del textbox para la confirmacion de la contraseña */
+.form-text-contrasena-usuarioConfirm {
+    width: 100%;
+    max-width: 19%;
+    position: fixed;
+    left: 76%;
+    top: 47%;
+    overflow: hidden;
+}
+
+.form-text-contrasena-usuarioConfirm input {
+    width: 100%;
+    height: 100%;
+    background: none;
+    color: #fff;
+    padding-top: 40px;
+    border: none;
+    outline: 0px;
+}
+
+.form-text-contrasena-usuarioConfirm .lbl-contrasena-usuarioConfirm {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    pointer-events: none;
+    border-bottom: 1px solid #c7c7c7;
+}
+
+.form-text-contrasena-usuarioConfirm .lbl-contrasena-usuarioConfirm:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #0e1b1b;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+
+.text-contrasena-usuarioConfirm {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: all 0.3s ease;
+    color: #fff;
+}
+
+.form-text-contrasena-usuarioConfirm input:focus+.lbl-contrasena-usuarioConfirm .text-contrasena-usuarioConfirm,
+.form-text-contrasena-usuarioConfirm input:valid+.lbl-contrasena-usuarioConfirm .text-contrasena-usuarioConfirm {
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #2ecece;
+}
+
+.form-text-contrasena-usuarioConfirm input:focus+.lbl-contrasena-usuarioConfirm:after,
+.form-text-contrasena-usuarioConfirm input:valid+.lbl-contrasena-usuarioConfirm:after {
+    transform: translateX(0%);
+}
+
+@media only screen and (min-width:320px) and (max-width:768px) {
+    .form-text-contrasena-usuarioConfirm {
+        width: 85%;
+    }
+}
+
+/* Estilo del textbox para el numero de telefono del usuario */
+.form-text-telefono-usuario {
+    width: 100%;
+    max-width: 40%;
+    position: fixed;
+    left: 5%;
+    top: 60%;
+    overflow: hidden;
+}
+
+.form-text-telefono-usuario input {
+    width: 100%;
+    height: 100%;
+    background: none;
+    color: #fff;
+    padding-top: 40px;
+    border: none;
+    outline: 0px;
+}
+
+.form-text-telefono-usuario .lbl-telefono-usuario {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    pointer-events: none;
+    border-bottom: 1px solid #c7c7c7;
+}
+
+.form-text-telefono-usuario .lbl-telefono-usuario:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #0e1b1b;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+
+.text-telefono-usuario {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: all 0.3s ease;
+    color: #fff;
+}
+
+.form-text-telefono-usuario input:focus+.lbl-telefono-usuario .text-telefono-usuario,
+.form-text-telefono-usuario input:valid+.lbl-telefono-usuario .text-telefono-usuario {
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #2ecece;
+}
+
+.form-text-telefono-usuario input:focus+.lbl-telefono-usuario:after,
+.form-text-telefono-usuario input:valid+.lbl-telefono-usuario:after {
+    transform: translateX(0%);
+}
+
+@media only screen and (min-width:320px) and (max-width:768px) {
+    .form-text-telefono-usuario {
+        width: 85%;
+    }
+}
+
+/* Estilo del textbox para el numero de tarjeta del usuario */
+.form-text-tarjeta-usuario {
+    width: 100%;
+    max-width: 40%;
+    position: fixed;
+    left: 55%;
+    top: 60%;
+    overflow: hidden;
+}
+
+.form-text-tarjeta-usuario input {
+    width: 100%;
+    height: 100%;
+    background: none;
+    color: #fff;
+    padding-top: 40px;
+    border: none;
+    outline: 0px;
+}
+
+.form-text-tarjeta-usuario .lbl-tarjeta-usuario {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    pointer-events: none;
+    border-bottom: 1px solid #c7c7c7;
+}
+
+.form-text-tarjeta-usuario .lbl-tarjeta-usuario:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #0e1b1b;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+
+.text-tarjeta-usuario {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: all 0.3s ease;
+    color: #fff;
+}
+
+.form-text-tarjeta-usuario input:focus+.lbl-tarjeta-usuario .text-tarjeta-usuario,
+.form-text-tarjeta-usuario input:valid+.lbl-tarjeta-usuario .text-tarjeta-usuario {
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #2ecece;
+}
+
+.form-text-tarjeta-usuario input:focus+.lbl-tarjeta-usuario:after,
+.form-text-tarjeta-usuario input:valid+.lbl-tarjeta-usuario:after {
+    transform: translateX(0%);
+}
+
+@media only screen and (min-width:320px) and (max-width:768px) {
+    .form-text-tarjeta-usuario {
+        width: 85%;
+    }
+}
+
+/* Estilo del comboBox para los departamentos */
+.form-enlaces-departamento-usuario {
+    position: absolute;
+    left: 75%;
+    transform: translateX(-50%);
+    top: 410%;
+    width: 25%;
+    height: 65%;
+}
+
+/* Estilo del comboBox para los municipios */
+
+.form-enlaces-municipio-usuario {
+    position: absolute;
+    left: 100%;
+    transform: translateX(-50%);
+    top: 413%;
+    width: 23%;
+    height: 80%;
+}
+
+/* Estilo del boton de enviar datos del usuario */
+.form-boton-usuario {
+    position: absolute;
+    left: 24%;
+    transform: translateX(-50%);
+    top: 460%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    color: #000000;
+    font-size: 100%;
+    font-weight: 600%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 30%;
+    height: 60%;
+}
+
+.form-boton-usuario:hover {
+    background: #2aad35;
+}
+
+@media only screen and (min-width:320px) and (max-width:768px) {
+    .form-boton-usuario {
+        width: 50%;
+    }
+}
+
+/* Estilo del boton para cancelar registro del usuario */
+.boton-usuario-return {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+  }

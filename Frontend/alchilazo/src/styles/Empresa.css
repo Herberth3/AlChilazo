@@ -1,0 +1,468 @@
+
+  .background-empresa {
+    background-color: rgba(226, 178, 115, 0.74);
+    
+    height: 100vmin;
+    margin: 0;
+    padding: 1px;
+  }
+  
+  .star {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    margin-right: 2px;
+    cursor: pointer;
+  }
+
+  .star.filled {
+    background-color: yellow;
+  }
+  
+
+  .background-usuario {
+    position: relative;
+    background-image: url("../assets/images/Estrellas.jpg");
+    background-size: repeat;
+    color: white;
+    height: 100vmin;
+    margin: 0;
+    padding: 1px;
+  }
+  
+  .content {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .background-usuario::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Cambia el valor alpha (0.5) para ajustar la opacidad del oscurecimiento */
+  }
+  
+  .lupa-icono {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000; /* Color del icono */
+  }
+  
+  
+  tr:hover {
+    background-color: rgb(215, 250, 250);
+  }
+
+
+  .background-empresa-registro {
+    background-color: rgba(226, 178, 115, 0.74);    
+    height: 125vmin;
+    margin: 0;
+    padding: 1px;
+  }
+
+  .background-empresa-menu {
+    background-color: rgba(233, 201, 160, 0.74);    
+    height: 100vmin;
+    margin: 0;
+    padding: 1px;
+  }
+
+  .background-registro{
+    background-color: rgba(226, 178, 115, 0.74);
+    
+    height: auto;
+    margin: 0;
+    padding: 1px;
+  }
+  
+  .background-admin {
+    background-color: whitesmoke;
+    height: 100vmin;
+    margin: 0;
+    padding: 1px;
+  }
+  
+  .background-encuesta {
+    background-color: rgba(245, 245, 245, 0.466);
+    height: 100vmin;
+    margin: 0;
+    padding: 1px;
+  }
+  
+  .form-modal-empresa {
+    display: grid;
+    grid-gap: 10px;
+    background-color: inherit;    
+  }
+  
+    .form-modal-empresa.item{
+        padding: 10px;
+        max-width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+  
+    .form-modal-empresa.item-center{
+      padding: 10px;
+      max-width: 40%;
+      margin-left: 30%;
+      margin-right: 30%;
+      align-items: center;
+  }
+  
+
+  td.catalogoEmpresa {
+    white-space: normal;
+    word-break: break-word;
+  }
+
+  td.catalogoEmpresa.par{
+    background-color: rgba(218, 218, 218, 0.548);
+  }
+
+  div.triple-visualizer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  div.triple-visualizer > div {
+    width: calc(30% - 20px); /* Establece el ancho para tres elementos en una fila */
+  }
+  
+  div.triple-visualizer.container {
+    background-color: white;
+    color: black;
+    font-size: larger;
+    font-weight: 500;
+    font-variant: normal;
+    border-radius: 20px;
+    border-color: white;
+    border-style: solid;
+    height: 60vh; /* Establece la altura en el 100% de la altura de la ventana */
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente los elementos */
+    padding: 20px;
+  }
+  
+  div.triple-visualizer.container .text {
+    text-align: center; /* Centra el texto horizontalmente */
+    margin-top: 20px; /* Agrega margen superior para separar del elemento anterior */    
+    font-weight: bold;
+    margin-right: 325px;
+  }
+  
+  div.triple-visualizer.container .little-container {
+    border-radius: 20px;
+    border-color: black;
+    border-style: solid;
+    margin-top: 20px;
+    width: 300px;
+    margin-left: auto; /* Mueve el elemento a la derecha */
+    margin-right: auto; /* Mueve el elemento a la izquierda */
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    overflow-x:hidden;
+  }
+
+  div.triple-visualizer.container .little-container.yellow {
+    background-color: yellow;
+  }
+  
+  div.triple-visualizer.container .little-container.blue {
+    background-color: lightblue;
+  }
+  
+  div.triple-visualizer.container .little-container.green {
+    background-color: lightgreen;
+  }
+
+  div.triple-visualizer.container .little-container:hover {
+    opacity: 0.5;
+  }
+  
+  div.triple-visualizer.container .little-container .image {
+    flex: 0 0 auto; /* Establece el tamaño automático para la imagen */
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+  }
+  
+  div.triple-visualizer.container .little-container .text {
+    flex: 1; /* Ocupa todo el espacio disponible */
+    padding-bottom: 30px;
+  }
+  
+  div.triple-visualizer.container .little-container .text h3 {
+    margin: 0; /* Elimina el margen superior e inferior del título */
+    font-weight: bolder;
+  }
+
+  div.triple-visualizer.container .little-container .text h4 {
+    margin: 0; /* Elimina el margen superior e inferior del título */
+  }
+  
+  
+
+  
+
+  div.visualizer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  div.visualizer > div {
+    width: calc(30% - 20px); /* Establece el ancho para tres elementos en una fila */
+    margin-bottom: 30px; /* Espacio entre los elementos */
+  }
+  
+
+  div.visualizer.container {
+    background-color: white;
+    color: black;
+    font-size: larger;
+    font-weight: 500;
+    font-variant: normal;
+    border-radius: 20px;
+    border-color: white;
+    border-style: solid;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  div.visualizer.container .image {
+    flex: 0 0 auto; /* Establece el tamaño automático para la imagen */
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+  }
+  
+  div.visualizer.container .text {
+    flex: 1; /* Ocupa todo el espacio disponible */
+  }
+  
+  div.visualizer.container .text h3 {
+    margin: 0; /* Elimina el margen superior e inferior del título */
+    font-weight: bolder;
+  }
+  
+  div.visualizer.container .text h4 {
+    margin: 0; /* Elimina el margen superior e inferior del subtítulo */
+  }
+
+  div.visualizer.container:hover {
+    opacity: 0.5;
+  }
+  
+
+    .titulo-empresa {
+      color: #ff0000;
+      font-size: 36px;
+      text-align:center;
+    }
+  
+    .subtitulo {
+      color: #ff0000;
+      text-align:left;
+    }
+  
+    .titulo-empresa-black {
+      color: black;
+      font-size: 36px;
+      text-align:center;
+      font-weight: 1000;
+    }
+  
+    .titulo-empresa-white {
+        color: white;
+        font-size: 36px;
+        text-align:center;
+        font-weight: 1000;
+      }
+  
+    .form-modal-empresa.item.deploy{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        background-color: inherit;
+        min-width: 50%;
+    }
+
+    .form-modal-empresa.item.deploy.border{
+      border: 4px solid black;
+      border-radius: 20px;
+  }
+  
+    .form-modal-empresa.container {
+        border-color: rgba(0, 0, 0, 0.151);
+        border-width: 1px;
+        border-style: solid;
+        max-width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+  
+    .form-modal-empresa.container.horizontal{
+        display: flex;
+        flex-direction: row;
+    }
+  
+    .form-modal-empresa.container.vertical{
+        display: flex;
+        flex-direction: column;
+    }
+  
+    .cardEmpresa {
+        background-color: white;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 10%;
+    }
+  
+    .small-upper-cardEmpresa{
+      margin-top: 7%;   
+    }
+
+    .small-upper-cardEmpresa.left{
+      margin-right: 70%;
+      margin-left: 3%;
+    }
+    
+    .small-upper-cardEmpresa.right{
+      margin-right: 3%;
+      margin-left: 35%;
+    }
+
+    .small-upper-cardEmpresa.container{
+      border-radius: 20px;
+      border-color: white;
+      background-color: grey;
+      border-style: solid;
+      display: flexbox;
+      flex-direction: column;
+      margin-left: 50px;
+    }
+
+    .small-cardEmpresa {
+      margin-right: 20%;
+      margin-left: 20%;
+      margin-top: 10%;
+      margin-bottom: 10%;  
+    }
+  
+    .small-cardEmpresa.container {
+      border-radius: 20px;
+      border-color: white;
+      border-style: solid;
+      display: flexbox;
+      flex-direction: column;
+    }
+  
+    .viewDouble {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 140px;      
+    }
+
+    div.close {
+      position: absolute;
+      right: 0; 
+      top: 0;
+    }
+
+    .cardEmpresa.container {
+        margin-left: 15%;
+        margin-top: 10%;
+        border-radius: 20px;
+        border-color: white;
+        border-style: solid;
+        display: flexbox;
+        flex-direction: column;
+    }
+  
+    .cardEmpresa.container.black {
+      border-radius: 20px;
+      border-color: black;
+      color: black;
+      border-style: solid;
+      display: flexbox;
+      flex-direction: column;
+    }
+  
+    
+    
+  
+  
+    ul.center{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+  
+    ul.left{
+      display: flex;
+      justify-content: space-between;
+      align-items: left;
+      list-style-type:circle;
+      padding: 0;
+      margin: 0;
+      background-color:aquamarine;
+      color: black;
+  
+    }
+  
+    .centerLi {
+      padding: 20px;
+      border: 1px solid white;
+      font-size: 20px;
+    }
+  
+    li.left {
+      background-color: antiquewhite;
+      padding: 20px;
+      border: 1px solid black;
+      font-size: 20px;
+      margin-left: 100vmin;
+    }
+    
+    a {
+        color: white;
+        text-decoration: none;
+        letter-spacing: 2px;
+        transition: all 0.25s ease-in-out;
+    }
+  
+    a.black {
+      color:black;
+      text-decoration: none;
+    }
+  
+    a:hover {
+      color: rgb(255, 255, 255);
+    }
+  
+    div.containerCenter {
+      margin-left: 100px;
+      margin-top: 10vmin;
+      margin-bottom: 100px;
+    }
+  
+    img.center {
+      max-height: 50vh;
+    }

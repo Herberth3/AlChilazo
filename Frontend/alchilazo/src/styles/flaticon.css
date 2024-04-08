@@ -1,0 +1,76 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 06/12/2019 10:58
+  	*/
+
+    @font-face {
+      font-family: "Flaticon";
+      src: url("../assets/LandingPage/Flaticon.eot");
+      src: url("../assets/LandingPage/Flaticon.eot?#iefix") format("embedded-opentype"),
+           url("../assets/LandingPage/Flaticon.woff2") format("woff2"),
+           url("../assets/LandingPage/Flaticon.woff") format("woff"),
+           url("../assets/LandingPage/Flaticon.ttf") format("truetype"),
+           url("../assets/LandingPage/Flaticon.svg#Flaticon") format("svg");
+      font-weight: normal;
+      font-style: normal;
+    }
+    
+    @media screen and (-webkit-min-device-pixel-ratio:0) {
+      @font-face {
+        font-family: "Flaticon";
+        src: url("../assets/LandingPage/Flaticon.svg#Flaticon") format("svg");
+      }
+    }
+    
+    [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+    [class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+      font-family: Flaticon;
+            font-size: 20px;
+    font-style: normal;
+    margin-left: 20px;
+    }
+    
+    .flaticon-facebook-app-logo:before { content: "\f100"; }
+    .flaticon-instagram-logo:before { content: "\f101"; }
+    .flaticon-twitter:before { content: "\f102"; }
+    .flaticon-royal-crown-of-triangles-grid-design:before { content: "\f103"; }
+    .flaticon-restaurant:before { content: "\f104"; }
+    .flaticon-drink-beer-jar:before { content: "\f105"; }
+    .flaticon-maps-and-flags:before { content: "\f106"; }
+    .flaticon-envelope:before { content: "\f107"; }
+    .flaticon-call-answer:before { content: "\f108"; }
+    .flaticon-crown:before { content: "\f109"; }
+    .flaticon-star:before { content: "\f10a"; }
+    .flaticon-clock-circular-outline:before { content: "\f10b"; }
+    .flaticon-breakfast:before { content: "\f10c"; }
+    .flaticon-fork:before { content: "\f10d"; }
+    .flaticon-beer:before { content: "\f10e"; }
+    .flaticon-dish:before { content: "\f10f"; }
+    .flaticon-ice-cream:before { content: "\f110"; }
+    .flaticon-chair:before { content: "\f111"; }
+    .flaticon-birthday-cake:before { content: "\f112"; }
+    .flaticon-bottle-and-glass-shapes:before { content: "\f113"; }
+    .flaticon-wine:before { content: "\f114"; }
+    .flaticon-glass-with-wine:before { content: "\f115"; }
+    .flaticon-google-plus:before { content: "\f116"; }
+    .flaticon-linkedin:before { content: "\f117"; }
+    .flaticon-pizza:before { content: "\f118"; }
+    .flaticon-pizza-1:before { content: "\f119"; }
+    .flaticon-open:before { content: "\f11a"; }
+    .flaticon-man-user:before { content: "\f11b"; }
+    .flaticon-calendar:before { content: "\f11c"; }
+    .flaticon-view:before { content: "\f11d"; }
+    .flaticon-search:before { content: "\f11e"; }
+    .flaticon-shopping-cart:before { content: "\f11f"; }
+    .flaticon-paypal-logo:before { content: "\f120"; }
+    .flaticon-paypal-logo-1:before { content: "\f121"; }
+    .flaticon-credit-cards-payment:before { content: "\f122"; }
+    .flaticon-visa-pay-logo:before { content: "\f123"; }
+    .flaticon-master-card-logo:before { content: "\f124"; }
+    .flaticon-amazon-logo:before { content: "\f125"; }
+    .flaticon-maestro-pay-logo:before { content: "\f126"; }
+    .flaticon-american-express-logo:before { content: "\f127"; }
+    .flaticon-price:before { content: "\f128"; }
+    .flaticon-talk:before { content: "\f129"; }
+    .flaticon-left-arrow:before { content: "\f12a"; }
+    .flaticon-right-arrow:before { content: "\f12b"; }

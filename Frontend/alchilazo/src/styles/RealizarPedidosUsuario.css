@@ -1,0 +1,75 @@
+.CardContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.CardContainer > * {
+    /*flex: 1 0 18rem;*/
+    flex: 1 0 auto;
+    max-width: 18rem;
+    margin: 0 10px 10px 0;
+}
+
+.contenedor{
+    /*background-color: #DB4F23 ; #A89D8F;    */
+    opacity: .85;
+    padding:40px 40px;
+    /*box-shadow: 0px 0px 3px #848484;*/
+    /*color: #F9F4EF;*/
+    margin: auto;
+    border-radius: 3%;
+}
+
+.container {
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}  
+
+.centered-form {    
+    position: relative;
+}
+
+.button-form-dev{
+    background-color: #DB4F23;
+    margin: auto;
+}
+
+.button-card-pedido{
+    background-color: #DB4F23;
+}
+
+.image-card {
+    width: 18rem;
+    height: 10rem;
+    object-fit: cover;
+  }
+
+.ModalSize {
+    min-width: 90vw;
+    min-height: 90vh;
+    max-width: 90vw;
+    max-height: 90vh;
+}
+
+.ModalSize .modal-dialog {
+    min-width: 90vw;
+    min-height: 90vh;
+    max-width: 90vw;
+    max-height: 90vh;
+}
+
+.ModalSize .modal-content {
+    min-width: 90vw;
+    min-height: 90vh;
+    max-width: 90vw;
+    max-height: 90vh;
+    background-color: white;
+}
+/*
+#modalListaPedidos .modal-dialog {
+min-width: 100% !important;
+min-height: 80% !important;
+max-width: 100% !important;
+max-height: 80% !important;
+}*/
